@@ -4,7 +4,6 @@ RUN apt-get update && apt-get install -qy openjdk-8-jdk-headless git make python
 WORKDIR /root
 RUN git clone git://git.osmocom.org/sim/sim-tools
 RUN git clone git://git.osmocom.org/sim/hello-stk
-RUN pip install 
 WORKDIR /root/hello-stk/hello-stk
 RUN make && ls -la ./build/javacard/org/toorcamp/HelloSTK/javacard/HelloSTK.cap
 WORKDIR /root 
